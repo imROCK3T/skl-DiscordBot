@@ -1,0 +1,71 @@
+{
+  "405096240888676352": [
+    {
+      "name": "F1 - Console, CombatLog, Buffer:",
+      "value": "bind f1 consoletoggle;combatlog;gc.buffer 2048",
+      "inline": false
+    },
+    {
+      "name": "Kill:",
+      "value": "bind delete kill",
+      "inline": false
+    },
+    {
+      "name": "FOV 90:",
+      "value": "bind y graphics.fov 90",
+      "inline": false
+    },
+    {
+      "name": "FOV 60:",
+      "value": "bind y graphics.fov 60",
+      "inline": false
+    },
+    {
+      "name": "Auto-run:",
+      "value": "bind i forward;sprint",
+      "inline": false
+    },
+    {
+      "name": "Auto-crouch:",
+      "value": "bind o duck",
+      "inline": false
+    },
+    {
+      "name": "FOV Scale:",
+      "value": "graphics.vm_fov_scale false",
+      "inline": false
+    },
+    {
+      "name": "Audio Up:",
+      "value": "bind z audio.master .6",
+      "inline": false
+    },
+    {
+      "name": "Audio Down:",
+      "value": "bind m audio.master .2",
+      "inline": false
+    },
+    {
+      "name": "Stand Shoot ADS change:",
+      "value": "bind mouse1 \"+attack2;+input.sensitivity .37;input.sensitivity .53;\"",
+      "inline": false
+    },
+    {
+      "name": "Crouch Shoot ADS change:",
+      "value": "input.bind leftcontrol \"+duck;input.sensitivity .37;input.sensitivity .37;\"",
+      "inline": false
+    }
+  ],
+  "507952791407296513": [
+    {
+      "name": "Teste",
+      "value": "teste",
+      "inline": false
+    },
+    {
+      "name": "Bind 4",
+      "value": "Valor da Bind 4",
+      "inline": false
+    }
+  ]
+}
