@@ -5,12 +5,12 @@ const {
   Client,
   IntentsBitField,
   ActivityType,
-  EmbedBuilder,
-  ButtonBuilder,
-  ButtonStyle,
-  SlashCommandBuilder,
-  ActionRowBuilder,
-  AttachmentBuilder,
+  // EmbedBuilder,
+  // ButtonBuilder,
+  // ButtonStyle,
+  // SlashCommandBuilder,
+  // ActionRowBuilder,
+  // AttachmentBuilder,
 } = require("discord.js");
 
 const client = new Client({
