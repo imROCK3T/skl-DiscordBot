@@ -1,5 +1,4 @@
 // * MONUMENTS POLL
-
 const {
   EmbedBuilder,
   AttachmentBuilder,
@@ -7,24 +6,27 @@ const {
   ButtonBuilder,
 } = require("discord.js");
 
-const votes = {
-  artic: [],
-  silo: [],
-  giant: [],
-  water: [],
-  power: [],
-  launch: [],
-  train: [],
-  satellite: [],
-  sewer: [],
-  dome: [],
-  airfield: [],
-  mil_tunnels: [],
-  mil_base: [],
-};
-
 module.exports = (client) => {
   client.on("interactionCreate", async (interaction) => {
+    // Move the votes object declaration here to reset it with each new poll
+    const votes = {
+      artic: [],
+      silo: [],
+      giant: [],
+      water: [],
+      power: [],
+      launch: [],
+      train: [],
+      satellite: [],
+      sewer: [],
+      dome: [],
+      airfield: [],
+      mil_tunnels: [],
+      mil_base: [],
+    };
+
+    const userVotes = {}; // Store user's votes
+
     if (interaction.isCommand() && interaction.commandName === "monumentos") {
       const allowedRoleIDs = ["836322454854303784", "836322454854303784"];
       const allowedUserIDs = ["405096240888676352"];

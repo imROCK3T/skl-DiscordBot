@@ -1,5 +1,3 @@
-// * SIM, NAO, TALVEZ EVENT
-
 const {
   EmbedBuilder,
   AttachmentBuilder,
@@ -7,14 +5,9 @@ const {
   ButtonBuilder,
 } = require("discord.js");
 
-const votes = {
-  yes: [],
-  no: [],
-  maybe: [],
-};
-
 module.exports = (client) => {
   client.on("interactionCreate", async (interaction) => {
+    console.log("Received interaction:", interaction);
     if (interaction.isCommand() && interaction.commandName === "evento") {
       // Check if the user has the allowed role or user ID
       const allowedRoleIDs = ["836322454854303784", "836322454854303784"];
@@ -66,6 +59,12 @@ module.exports = (client) => {
 
         const eventDescription = descriptionMessage.first().content;
         console.log("Event Description:", eventDescription);
+
+        const votes = {
+          yes: [],
+          no: [],
+          maybe: [],
+        };
 
         const file = new AttachmentBuilder("../assets/logo.png");
         const exampleEmbed = new EmbedBuilder()
@@ -180,6 +179,7 @@ module.exports = (client) => {
             content: currentVote.includes(user.id)
               ? "Voto registado."
               : "Voto removido.",
+
             ephemeral: true,
           });
         });
