@@ -2,7 +2,7 @@
   "405096240888676352": [
     {
       "name": "F1 - Console, CombatLog, Buffer:",
-      "value": "bind f1 consoletoggle;combatlog;gc.buffer 2048",
+      "value": "bind f1 consoletoggle;combatlog",
       "inline": false
     },
     {
@@ -11,13 +11,13 @@
       "inline": false
     },
     {
-      "name": "FOV 90:",
-      "value": "bind y graphics.fov 90",
+      "name": "FOV 60:",
+      "value": "bind u graphics.fov 60",
       "inline": false
     },
     {
-      "name": "FOV 60:",
-      "value": "bind y graphics.fov 60",
+      "name": "FOV TOGGLE:",
+      "value": "bind c +meta.if_true 'fov 60';+meta.if_false 'fov 90'",
       "inline": false
     },
     {
@@ -46,6 +46,16 @@
       "inline": false
     },
     {
+      "name": "Voices ON:",
+      "value": "bind PageUp audio.voices 2",
+      "inline": false
+    },
+    {
+      "name": "Voices OFF:",
+      "value": "bind PageDown audio.voices 0",
+      "inline": false
+    },
+    {
       "name": "Stand Shoot ADS change:",
       "value": "bind mouse1 \"+attack2;+input.sensitivity .37;input.sensitivity .53;\"",
       "inline": false
@@ -54,8 +64,14 @@
       "name": "Crouch Shoot ADS change:",
       "value": "input.bind leftcontrol \"+duck;input.sensitivity .37;input.sensitivity .37;\"",
       "inline": false
+    },
+    {
+      "name": "Steam Launch Options",
+      "value": "-high -maxMem=32768 -malloc=system -force-feature-level-11-0 -cpuCount=8 -exThreads=16 -force-d3d11-no-singlethreaded -gc.buffer 4096 -effects.maxgibs -1 -client.headlerp_inertia false",
+      "inline": false
     }
   ],
+
   "507952791407296513": [
     {
       "name": "Teste",

@@ -129,6 +129,7 @@ module.exports = (client) => {
           });
 
         const message = await channel.send({
+          content: "@everyone: Votem todos!",
           embeds: [exampleEmbed],
         });
 

@@ -100,6 +100,7 @@ module.exports = (client) => {
 
         const channel = interaction.channel;
         const message = await channel.send({
+          content: "@everyone: Votem todos!",
           embeds: [exampleEmbed],
           components: [row],
         });

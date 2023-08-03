@@ -132,6 +132,7 @@ module.exports = (client) => {
       const channel = interaction.channel;
 
       const messageRow1 = await channel.send({
+        content: "@everyone: Votem em dois!",
         embeds: [exampleEmbed],
         components: [new ActionRowBuilder().addComponents(...buttonsRow1)],
       });
