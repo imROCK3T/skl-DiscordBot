@@ -46,7 +46,8 @@ module.exports = (client) => {
         !message.member.roles.cache.some(
           (role) =>
             role.id === "1111417713944965200" ||
-            role.id === "1104402193601269840"
+            role.id === "1104402193601269840" ||
+            role.id === "1112387506869129266"
         ) &&
         message.author.id !== "405096240888676352"
       ) {
